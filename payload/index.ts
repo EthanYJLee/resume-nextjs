@@ -6,6 +6,7 @@ import openSource from './openSource';
 import project from './project';
 import presentation from './presentation';
 import education from './education';
+import certificate from './certificate';
 import article from './article';
 import etc from './etc';
 import footer from './footer';
@@ -20,6 +21,7 @@ import { IExperience } from '../component/experience/IExperience';
 import { IProject } from '../component/project/IProject';
 import { IPresentation } from '../component/presentation/IPresentation';
 import { IEducation } from '../component/education/IEducation';
+import { ICertificate } from '../component/certificate/ICertificate';
 import { IEtc } from '../component/etc/IEtc';
 import { IFooter } from '../component/footer/IFooter';
 import { IGlobal } from '../component/common/IGlobal';
@@ -35,6 +37,7 @@ const Payload: Payload = {
   presentation,
   article,
   education,
+  certificate,
   etc,
   footer,
 
@@ -50,6 +53,7 @@ interface Payload {
   project: IProject.Payload;
   presentation: IPresentation.Payload;
   education: IEducation.Payload;
+  certificate: ICertificate.Payload;
   article: IArticle.Payload;
   etc: IEtc.Payload;
   footer: IFooter.Payload;

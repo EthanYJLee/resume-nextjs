@@ -67,7 +67,7 @@ function createCalculatedSkillItems(items: ISkill.Item[], isVerticalScreen: bool
             {items.map((skill, skillIndex) => {
               return (
                 <li key={skillIndex.toString()}>
-                  {createBadge(skill.level)}
+                  {/* {createBadge(skill.level)} */}
                   {skill.title}
                 </li>
               );
@@ -87,7 +87,7 @@ function createCalculatedSkillItems(items: ISkill.Item[], isVerticalScreen: bool
               {skills.map((skill, skillIndex) => {
                 return (
                   <li key={skillIndex.toString()}>
-                    {createBadge(skill.level)}
+                    {/* {createBadge(skill.level)} */}
                     {skill.title}
                   </li>
                 );

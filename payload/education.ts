@@ -5,16 +5,22 @@ const education: IEducation.Payload = {
 
   list: [
     {
-      title: 'University of Open Source',
-      subTitle: 'PhD in System Engineering (Honorary)',
-      startedAt: '1991-03',
-      // endedAt: '2010-02',
+      title: '고려대학교',
+      subTitle: '지능정보 SW 아카데미 수료',
+      startedAt: '2025-08',
+      endedAt: '2025-12',
     },
     {
-      title: 'Antarctica High School',
-      subTitle: 'Graduated',
-      startedAt: '1989-03',
-      endedAt: '1991-02',
+      title: 'K-Digital Training',
+      subTitle: '빅데이터 분석 & 추천시스템 개발자 양성과정 수료',
+      startedAt: '2022-09',
+      endedAt: '2023-03',
+    },
+    {
+      title: '세종대학교',
+      subTitle: '호텔경영학 전공 학사 졸업',
+      startedAt: '2014-03',
+      endedAt: '2022-02',
     },
   ],
 };

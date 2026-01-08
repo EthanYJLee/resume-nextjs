@@ -1,14 +1,10 @@
 import { ISkill } from '../component/skill/ISkill';
 
-const programmingLanguages: ISkill.Skill = {
-  category: 'Programming Languages',
+const languages: ISkill.Skill = {
+  category: 'Languages',
   items: [
     {
-      title: 'C',
-      level: 3,
-    },
-    {
-      title: 'Shell Scripting',
+      title: 'Java',
       level: 3,
     },
     {
@@ -16,93 +12,105 @@ const programmingLanguages: ISkill.Skill = {
       level: 3,
     },
     {
-      title: 'Perl',
+      title: 'Dart',
+      level: 3,
+    },
+    {
+      title: 'JavaScript',
       level: 2,
     },
     {
-      title: 'Golang',
-      level: 2,
+      title: 'C',
+      level: 1,
     },
     {
-      title: 'Rust',
+      title: 'Swift',
       level: 1,
     },
   ],
 };
 
-const kernelDevelopment: ISkill.Skill = {
-  category: 'Kernel Development',
+const frameworksAndLibraries: ISkill.Skill = {
+  category: 'Frameworks & Libraries',
   items: [
     {
-      title: 'Kernel Programming',
+      title: 'Spring Boot',
       level: 3,
     },
     {
-      title: 'GNU Debugger',
+      title: 'ReactJS',
       level: 3,
     },
     {
-      title: 'Memory Management',
+      title: 'Flutter',
+      level: 3,
+    },
+    {
+      title: 'Express.js',
       level: 2,
     },
     {
-      title: 'System Call Interface',
+      title: 'FastAPI',
+      level: 2,
+    },
+    {
+      title: 'Flask',
       level: 2,
     },
   ],
 };
 
-const virtualization: ISkill.Skill = {
-  category: 'Virtualization',
+const infrastructureAndDatabases: ISkill.Skill = {
+  category: 'Infrastructure & Databases',
   items: [
+    {
+      title: 'MySQL/MariaDB',
+      level: 3,
+    },
+    {
+      title: 'MongoDB',
+      level: 3,
+    },
     {
       title: 'Docker',
-      level: 3,
-    },
-    {
-      title: 'KVM',
-      level: 3,
-    },
-    {
-      title: 'Xen',
       level: 2,
     },
     {
-      title: 'VirtualBox',
+      title: 'Linux',
       level: 2,
     },
     {
-      title: 'VMware ESXi',
-      level: 1,
+      title: 'nginx/Apache',
+      level: 2,
     },
   ],
 };
 
-const automation: ISkill.Skill = {
-  category: 'Automation',
+const toolsAndIDEs: ISkill.Skill = {
+  category: 'Tools & IDEs',
   items: [
     {
-      title: 'Ansible',
+      title: 'Git',
       level: 3,
     },
     {
-      title: 'Puppet',
+      title: 'VS Code',
       level: 3,
     },
     {
-      title: 'Chef',
+      title: 'Github',
       level: 2,
     },
     {
-      title: 'Jenkins',
+      title: 'Xcode',
       level: 2,
     },
     {
-      title: 'CI/CD Pipelines',
+      title: 'Eclipse',
       level: 1,
     },
     {
-      title: 'Infrastructure as Code',
+      title: 'STS',
       level: 1,
     },
   ],
@@ -162,17 +170,40 @@ const misc: ISkill.Skill = {
   ],
 };
 
+const certifications: ISkill.Skill = {
+  category: 'Certifications',
+  items: [
+    {
+      title: '정보처리기사',
+      level: 3,
+    },
+    {
+      title: 'AICE - ASSOCIATE',
+      level: 3,
+    },
+    {
+      title: 'SQLD',
+      level: 3,
+    },
+    {
+      title: 'ADsP',
+      level: 3,
+    },
+  ],
+};
+
 const skill: ISkill.Payload = {
   disable: false,
   skills: [
-    programmingLanguages,
-    kernelDevelopment,
-    virtualization,
-    automation,
-    networkSecurity,
-    misc,
+    languages,
+    frameworksAndLibraries,
+    infrastructureAndDatabases,
+    toolsAndIDEs,
+    // networkSecurity,
+    // misc,
+    certifications,
   ],
-  tooltip: '1: 기초 수준\n2: 취미 개발 수준\n3: Production 개발 가능 수준',
+  // tooltip: '1: 기초 수준\n2: 취미 개발 수준\n3: Production 개발 가능 수준',
 };
 
 export default skill;
