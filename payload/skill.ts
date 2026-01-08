@@ -170,28 +170,6 @@ const misc: ISkill.Skill = {
   ],
 };
 
-const certifications: ISkill.Skill = {
-  category: 'Certifications',
-  items: [
-    {
-      title: '정보처리기사',
-      level: 3,
-    },
-    {
-      title: 'AICE - ASSOCIATE',
-      level: 3,
-    },
-    {
-      title: 'SQLD',
-      level: 3,
-    },
-    {
-      title: 'ADsP',
-      level: 3,
-    },
-  ],
-};
-
 const skill: ISkill.Payload = {
   disable: false,
   skills: [
@@ -201,7 +179,7 @@ const skill: ISkill.Payload = {
     toolsAndIDEs,
     // networkSecurity,
     // misc,
-    certifications,
+    // certifications,
   ],
   // tooltip: '1: 기초 수준\n2: 취미 개발 수준\n3: Production 개발 가능 수준',
 };
