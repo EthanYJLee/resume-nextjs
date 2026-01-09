@@ -15,6 +15,12 @@ const etc: IEtc.Payload = {
       startedAt: '2025-10',
     },
     {
+      title: '싱가포르 PSB Academy',
+      subTitle: '교환학생',
+      startedAt: '2019-07',
+      endedAt: '2019-12',
+    },
+    {
       title: '세종대학교 호텔관광대학 교내학술제 (In & Out 학술공모전)',
       subTitle: '최우수상 수상',
       startedAt: '2018-11',
