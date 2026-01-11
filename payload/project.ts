@@ -11,6 +11,10 @@ const project: IProject.Payload = {
       descriptions: [
         {
           content:
+            '4인 팀 프로젝트를 진행하며 전체적인 아키텍처 설계 및 구현을 주도하고, 기존 LumiNet 모델 테스트/튜닝 등을 통한 Lumiply AI 엔진 개발',
+        },
+        {
+          content:
             '실내 사진에 가상 조명을 배치하고 7색 (white, red, orange, yellow, green, blue, purple) 리라이팅 결과를 비교, 저장하는 PoC를 end-to-end로 설계 및 구현',
         },
         {
