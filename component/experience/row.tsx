@@ -94,7 +94,15 @@ export default function ExperienceRow({
             <i style={Style.gray}>{position.title}</i>
             <ul className="pt-2">
               {position.descriptions.map((description, descIndex) => (
-                <li key={descIndex.toString()}>{description}</li>
+                <li key={descIndex.toString()}>
+                  {description.href ? (
+                    <a href={description.href} target="_blank" rel="noreferrer noopener">
+                      {description.content}
+                    </a>
+                  ) : (
+                    description.content
+                  )}
+                </li>
               ))}
               {createSkillKeywords(position.skillKeywords)}
             </ul>

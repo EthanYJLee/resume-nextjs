@@ -1,4 +1,5 @@
 import { ICommon } from '../common/ICommon';
+import { IRow } from '../common/IRow';
 
 export declare namespace IExperience {
   /**
@@ -47,11 +48,10 @@ export declare namespace IExperience {
     /**
      * ### (직장)경험 설명
      *
-     * @description 하나의 `string` 요소가 `<ul>` 태그 안의 `<li>` 가 된다.
-     * @todo `IRow.Description[]` 으로 변경
+     * @description 하나의 요소가 `<ul>` 태그 안의 `<li>` 가 된다.
      */
 
-    descriptions: string[];
+    descriptions: IRow.Description[];
     /**
      * ### (직장)경험의 키워드
      *

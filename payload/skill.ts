@@ -19,14 +19,6 @@ const languages: ISkill.Skill = {
       title: 'JavaScript',
       level: 2,
     },
-    {
-      title: 'C',
-      level: 1,
-    },
-    {
-      title: 'Swift',
-      level: 1,
-    },
   ],
 };
 
@@ -46,15 +38,7 @@ const frameworksAndLibraries: ISkill.Skill = {
       level: 3,
     },
     {
-      title: 'Express.js',
-      level: 2,
-    },
-    {
-      title: 'FastAPI',
-      level: 2,
-    },
-    {
-      title: 'Flask',
+      title: 'FastAPI/Flask',
       level: 2,
     },
   ],
