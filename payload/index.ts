@@ -1,6 +1,7 @@
 import profile from './profile';
 import introduce from './introduce';
 import skill from './skill';
+import language from './language';
 import experience from './experience';
 import openSource from './openSource';
 import project from './project';
@@ -16,6 +17,7 @@ import { _global } from './_global';
 import { IProfile } from '../component/profile/IProfile';
 import { IIntroduce } from '../component/introduce/IIntroduce';
 import { ISkill } from '../component/skill/ISkill';
+import { ILanguage } from '../component/language/ILanguage';
 import { IOpenSource } from '../component/openSource/IOpenSource';
 import { IExperience } from '../component/experience/IExperience';
 import { IProject } from '../component/project/IProject';
@@ -31,6 +33,7 @@ const Payload: Payload = {
   profile,
   introduce,
   skill,
+  language,
   openSource,
   experience,
   project,
@@ -48,6 +51,7 @@ interface Payload {
   profile: IProfile.Payload;
   introduce: IIntroduce.Payload;
   skill: ISkill.Payload;
+  language: ILanguage.Payload;
   openSource: IOpenSource.Payload;
   experience: IExperience.Payload;
   project: IProject.Payload;

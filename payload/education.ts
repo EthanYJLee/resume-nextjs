@@ -22,6 +22,18 @@ const education: IEducation.Payload = {
       startedAt: '2014-03',
       endedAt: '2022-02',
     },
+    {
+      title: '서울세종고등학교',
+      subTitle: '인문계열 졸업',
+      startedAt: '2013-03',
+      endedAt: '2014-02',
+    },
+    {
+      title: 'The British School of Beijing',
+      subTitle: '국제학교',
+      startedAt: '2010-12',
+      endedAt: '2012-12',
+    },
   ],
 };
 

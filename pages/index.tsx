@@ -8,6 +8,7 @@ import { Etc } from '../component/etc';
 import { Experience } from '../component/experience';
 import { Footer } from '../component/footer';
 import { Introduce } from '../component/introduce';
+import { Language } from '../component/language';
 import { Profile } from '../component/profile';
 import { Project } from '../component/project';
 import { Skill } from '../component/skill';
@@ -37,6 +38,7 @@ function Yosume() {
         {/* <Article.Component payload={Payload.article} /> */}
         <Education.Component payload={Payload.education} />
         <Certificate.Component payload={Payload.certificate} />
+        <Language.Component payload={Payload.language} />
         <Etc.Component payload={Payload.etc} />
         <Footer.Component payload={Payload.footer} />
       </Container>
