@@ -30,7 +30,7 @@ const education: IEducation.Payload = {
     },
     {
       title: 'The British School of Beijing',
-      subTitle: '국제학교',
+      subTitle: '중국 거주',
       startedAt: '2010-12',
       endedAt: '2012-12',
     },
