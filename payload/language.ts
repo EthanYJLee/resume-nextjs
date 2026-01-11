@@ -25,8 +25,8 @@ const language: ILanguage.Payload = {
     {
       title: '일본어',
       date: '2025-08',
-      certificate: 'TOEIC',
-      score: '890',
+      certificate: 'JLPT',
+      score: 'N3',
     },
   ],
 };
