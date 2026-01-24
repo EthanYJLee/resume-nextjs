@@ -74,7 +74,7 @@ const project: IProject.Payload = {
       descriptions: [
         {
           content:
-            '운영 서버 이전 과정에서 Ubuntu–Docker–Tomcat 기반 .war 배포 체계를 구성해 운영 서버 이전 후 서비스 가동 환경을 안정화',
+            '운영 서버 이전 과정에서 Ubuntu–Docker–Nginx 기반 .war 배포 체계를 구성해 운영 서버 이전 후 서비스 가동 환경을 안정화',
         },
         {
           content:
