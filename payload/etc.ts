@@ -6,12 +6,12 @@ const etc: IEtc.Payload = {
   list: [
     {
       title: '고려대학교 지능정보 SW 아카데미 최종 프로젝트 평가',
-      subTitle: '최우수상 수상',
+      subTitle: '최우수상(고려대학교 지능정보 SW 아카데미 학장상) 수상',
       startedAt: '2025-12',
     },
     {
       title: '한국경제신문 지능정보 SW 아이디어 경진대회',
-      subTitle: '장려상 수상',
+      subTitle: '장려상(한국경제신문 사장상) 수상',
       startedAt: '2025-10',
     },
     {
@@ -21,7 +21,7 @@ const etc: IEtc.Payload = {
       endedAt: '2019-12',
     },
     {
-      title: '세종대학교 호텔관광대학 교내학술제 (In & Out 학술공모전)',
+      title: '세종대학교 호텔관광대학 교내학술제(In & Out 학술공모전)',
       subTitle: '최우수상 수상',
       startedAt: '2018-11',
     },

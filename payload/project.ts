@@ -4,7 +4,7 @@ const project: IProject.Payload = {
   disable: false,
   list: [
     {
-      title: 'Lumiply – 실내 공간 조명 색상 리라이팅 (Relighting) 서비스 PoC 개발',
+      title: 'Lumiply – 실내 공간 조명 색상 리라이팅(Relighting) 서비스 PoC 개발',
       startedAt: '2025-10',
       endedAt: '2025-12',
       where: '고려대학교 INISW',
@@ -15,23 +15,23 @@ const project: IProject.Payload = {
         },
         {
           content:
-            '실내 사진에 가상 조명을 배치하고 7색 (white, red, orange, yellow, green, blue, purple) 리라이팅 결과를 비교, 저장하는 PoC를 end-to-end로 설계 및 구현',
+            '실내 사진에 가상 조명을 배치하고 7색(white, red, orange, yellow, green, blue, purple) 리라이팅 결과를 비교, 저장하는 PoC를 end-to-end로 설계 및 구현',
         },
         {
           content:
-            '실내 이미지 크롤링으로 데이터를 확보하고, 증강 + SSIM/LPIPS 등 분석으로 수집 → 실험 → 피드백 루프를 돌리며 방향을 잡음',
+            '실내 이미지 크롤링으로 데이터를 확보하고, 증강 + SSIM/LPIPS 등 분석으로 수집-실험-피드백 루프를 돌리며 방향을 잡음',
         },
         {
           content:
-            '다양한 비율 (세로로 긴 이미지 등)에서 에디터에서 보이는 조명 위치/크기와 합성 결과가 어긋나는 문제를 재현하고, object-fit: contain 기준 좌표 변환/스케일 보정으로 정합성을 확보',
+            '다양한 비율(세로로 긴 이미지 등)에서 에디터에서 보이는 조명 위치/크기와 합성 결과가 어긋나는 문제를 재현하고, object-fit: contain 기준 좌표 변환/스케일 보정으로 정합성을 확보',
         },
         {
           content:
-            'Colab (GPU) 환경 제약을 전제로 Flask 추론 서버 + ngrok 공개로 서빙하고, FastAPI에서 job/polling 구조로 비동기 처리 (타임아웃/실패 상태 포함) 흐름을 정리',
+            'Colab(GPU) 환경 제약을 전제로 Flask 추론 서버 + ngrok 공개로 서빙하고, FastAPI에서 job/polling 구조로 비동기 처리(타임아웃/실패 상태 포함) 흐름을 정리',
         },
         {
           content:
-            '생성 지연이 긴 문제를 색상별 부분 결과 (white부터) 누적 + 진행률 메시지로 분해해 사용자가 결과를 기다리는 동안 화면이 점진적으로 채워지는 경험으로 개선',
+            '생성 지연이 긴 문제를 색상별 부분 결과(white부터) 누적 + 진행률 메시지로 분해해 사용자가 결과를 기다리는 동안 화면이 점진적으로 채워지는 경험으로 개선',
         },
         {
           content:
@@ -47,11 +47,11 @@ const project: IProject.Payload = {
       title: 'AgingLOC 운동 처방 관리자 페이지 개발',
       startedAt: '2024-10',
       endedAt: '2024-12',
-      where: '(주)메디아이오티 (Medi-IoT)',
+      where: '(주)메디아이오티(Medi-IoT)',
       descriptions: [
         {
           content:
-            '질병군/성별/연령 → 주차 → 세부 프로그램으로 이어지는 복합 입력 도메인을 관리자 화면의 입력 플로우로 설계 및 구현',
+            '질병군/성별/연령-주차-세부 프로그램으로 이어지는 복합 입력 도메인을 관리자 화면의 입력 플로우로 설계 및 구현',
         },
         {
           content:
@@ -74,7 +74,7 @@ const project: IProject.Payload = {
       descriptions: [
         {
           content:
-            '운영 서버 이전 과정에서 Ubuntu–Docker–Nginx 기반 .war 배포 체계를 구성해 운영 서버 이전 후 서비스 가동 환경을 안정화',
+            '운영 서버 이전 과정에서 Ubuntu–Docker–Nginx 기반 war 배포 체계를 구성해 운영 서버 이전 후 서비스 가동 환경을 안정화',
         },
         {
           content:
@@ -86,7 +86,7 @@ const project: IProject.Payload = {
         },
         {
           content:
-            '운영 중 핵심 기능 결함 (환자 ID 전달, 치료지시, 페이징 등)을 테스트로 발견 및 재현하여 수정 요청 (요건 정리/재현 절차 포함) 및 반영 결과 최종 검증',
+            '운영 중 핵심 기능 결함(환자 ID 전달, 치료지시, 페이징 등)을 테스트로 발견 및 재현하여 수정 요청(요건 정리/재현 절차 포함) 및 반영 결과 최종 검증',
         },
         {
           content: '서버/디렉토리 구조를 문서화하여 인수인계/유지보수 비용을 절감',
@@ -103,14 +103,14 @@ const project: IProject.Payload = {
       ],
     },
     {
-      title: '도로 균열 (싱크홀) 실시간 모니터링 시스템 개발',
+      title: '도로 균열(싱크홀) 실시간 모니터링 시스템 개발',
       startedAt: '2024-04',
       endedAt: '2024-06',
-      where: '(주)메디아이오티 (Medi-IoT)',
+      where: '(주)메디아이오티(Medi-IoT)',
       descriptions: [
         {
           content:
-            '카메라 연속 촬영 (프리뷰)과 균열 추론을 Isolate로 병렬화하여 UI 스레드 블로킹을 완화',
+            '카메라 연속 촬영(프리뷰)과 균열 추론을 Isolate로 병렬화하여 UI 스레드 블로킹을 완화',
         },
         {
           content: '감지 결과 바운딩 박스를 실시간 오버레이로 렌더링해 모니터링 사용성을 확보',
@@ -125,7 +125,7 @@ const project: IProject.Payload = {
         },
         {
           content:
-            '운영 관점의 추적성을 위해 로컬 로그 저장/조회 흐름을 구성 (SQLite 로그 CRUD 등)하고, 현장 이슈 재현/분석이 가능하도록 개선',
+            '운영 관점의 추적성을 위해 로컬 로그 저장/조회 흐름을 구성(SQLite 로그 CRUD 등)하고, 현장 이슈 재현/분석이 가능하도록 개선',
         },
       ],
     },
@@ -133,7 +133,7 @@ const project: IProject.Payload = {
       title: 'AgingLOC 커뮤니티 기능 개발',
       startedAt: '2024-01',
       endedAt: '2024-03',
-      where: '(주)메디아이오티 (Medi-IoT)',
+      where: '(주)메디아이오티(Medi-IoT)',
       descriptions: [
         {
           content: '커뮤니티 기능을 운영 가능한 형태로 개발하여 사용자 참여 기능을 확보',
@@ -144,7 +144,7 @@ const project: IProject.Payload = {
         },
         {
           content:
-            '사용자 상태 (등록 여부)에 따른 진입 분기 등 실제 사용 시나리오 기준으로 화면, 로직을 정리하여 이탈/오류를 줄이는 흐름을 구현',
+            '사용자 상태(등록 여부)에 따른 진입 분기 등 실제 사용 시나리오 기준으로 화면, 로직을 정리하여 이탈/오류를 줄이는 흐름을 구현',
         },
       ],
     },
@@ -153,11 +153,11 @@ const project: IProject.Payload = {
       title: 'AgingLOC 서비스 인수/출시 및 운영 안정화',
       startedAt: '2023-08',
       endedAt: '2023-12',
-      where: '(주)메디아이오티 (Medi-IoT)',
+      where: '(주)메디아이오티(Medi-IoT)',
       descriptions: [
         {
           content:
-            'SI 개발 산출물 인수 후 릴리즈 가능 상태로 품질을 끌어올리는 과정을 주도 (기능 점검, 결함 수집/분류, 수정/검증)',
+            'SI 개발 산출물 인수 후 릴리즈 가능 상태로 품질을 끌어올리는 과정을 주도(기능 점검, 결함 수집/분류, 수정/검증)',
         },
         {
           content:
@@ -165,7 +165,7 @@ const project: IProject.Payload = {
         },
         {
           content:
-            '딥링크/스토어 이슈를 해결 (SHA256 지문 설정 등)하고, 인증/보안 로직 (AES 암호화, 액세스/리프레시 토큰, 시스템 점검 페이지)을 정비해 릴리즈 리스크를 낮춤',
+            '딥링크/스토어 이슈를 해결(SHA256 지문 설정 등)하고, 인증/보안 로직 (AES 암호화, 액세스/리프레시 토큰, 시스템 점검 페이지)을 정비해 릴리즈 리스크를 낮춤',
         },
       ],
     },
