@@ -23,7 +23,7 @@ const project: IProject.Payload = {
         },
         {
           content:
-            '다양한 비율(세로로 긴 이미지 등)에서 에디터에서 보이는 조명 위치/크기와 합성 결과가 어긋나는 문제를 재현하고, object-fit: contain 기준 좌표 변환/스케일 보정으로 정합성을 확보',
+            '다양한 비율(세로로 긴 이미지 등)에서 에디터에서 보이는 조명 위치/크기와 합성 결과가 어긋나는 문제를 바로잡아 일관성 확보',
         },
         {
           content:
@@ -70,7 +70,7 @@ const project: IProject.Payload = {
       title: 'MEDI-EYE 서버 이전/배포 체계 구축 및 운영 안정화',
       startedAt: '2024-07',
       endedAt: '2024-12',
-      where: '(주)메디아이오티 (Medi-IoT)',
+      where: '(주)메디아이오티(Medi-IoT)',
       descriptions: [
         {
           content:
@@ -165,7 +165,7 @@ const project: IProject.Payload = {
         },
         {
           content:
-            '딥링크/스토어 이슈를 해결(SHA256 지문 설정 등)하고, 인증/보안 로직 (AES 암호화, 액세스/리프레시 토큰, 시스템 점검 페이지)을 정비해 릴리즈 리스크를 낮춤',
+            '딥링크/스토어 이슈를 해결(SHA256 지문 설정 등)하고, 인증/보안 로직(AES 암호화, 액세스/리프레시 토큰, 시스템 점검 페이지)을 정비해 릴리즈 리스크를 낮춤',
         },
       ],
     },
