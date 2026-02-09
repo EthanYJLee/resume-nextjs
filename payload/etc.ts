@@ -5,7 +5,7 @@ const etc: IEtc.Payload = {
 
   list: [
     {
-      title: '고려대학교 지능정보 SW 아카데미 최종 프로젝트 평가',
+      title: '고려대학교 지능정보 SW 아카데미 구현대회',
       subTitle: '최우수상(고려대학교 지능정보 SW 아카데미 학장상) 수상',
       startedAt: '2025-12',
     },
