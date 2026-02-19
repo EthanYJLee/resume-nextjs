@@ -7,6 +7,7 @@ import { ILanguage } from './ILanguage';
 import { IRow } from '../common/IRow';
 import { PreProcessingComponent } from '../common/PreProcessingComponent';
 import Util from '../common/Util';
+import { useI18n } from '../../i18n/I18nProvider';
 
 type Payload = ILanguage.Payload;
 type Item = ILanguage.Item;
@@ -21,8 +22,9 @@ export const Language = {
 };
 
 function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
+  const { t } = useI18n();
   return (
-    <CommonSection title="LANGUAGE">
+    <CommonSection title={t('section.language')}>
       <LanguageRow payload={payload} />
     </CommonSection>
   );

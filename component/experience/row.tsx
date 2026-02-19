@@ -5,6 +5,7 @@ import { PropsWithChildren } from 'react';
 import { IExperience } from './IExperience';
 import { Style } from '../common/Style';
 import Util from '../common/Util';
+import { useI18n } from '../../i18n/I18nProvider';
 
 type PositionWithDates = IExperience.Position & {
   startedAtDate: DateTime;
@@ -16,6 +17,7 @@ export default function ExperienceRow({
   item,
   index,
 }: PropsWithChildren<{ item: IExperience.Item; index: number }>) {
+  const { locale, t } = useI18n();
   const positionsWithDates: PositionWithDates[] = item.positions.map((position) => ({
     ...position,
     startedAtDate: DateTime.fromFormat(position.startedAt, Util.LUXON_DATE_FORMAT.YYYY_LL),
@@ -68,11 +70,11 @@ export default function ExperienceRow({
             <span style={{ fontSize: '65%', display: 'inline-flex', alignItems: 'center' }}>
               {isCurrentlyEmployed && (
                 <Badge color="primary" className="ml-1">
-                  재직 중
+                  {t('experience.currentlyEmployed')}
                 </Badge>
               )}
               <Badge color="info" className="ml-1">
-                {Util.getFormattingDuration(minStartedAt, maxEndedAt)}
+                {Util.getFormattingDuration(minStartedAt, maxEndedAt, locale)}
               </Badge>
             </span>
           </h4>
@@ -111,6 +113,29 @@ export default function ExperienceRow({
       ))}
     </div>
   );
+
+  function createSkillKeywords(skillKeywords?: string[]) {
+    if (!skillKeywords) {
+      return null;
+    }
+    return (
+      <li>
+        <strong>{t('experience.skillKeywords')}</strong>
+        <div>
+          {skillKeywords.map((keyword, keywordIndex) => (
+            <Badge
+              style={Style.skillKeywordBadge}
+              key={keywordIndex.toString()}
+              color="secondary"
+              className="mr-1"
+            >
+              {keyword}
+            </Badge>
+          ))}
+        </div>
+      </li>
+    );
+  }
 }
 
 function createOverallWorkingPeriod(positions: PositionWithDates[]) {
@@ -139,29 +164,6 @@ function createOverallWorkingPeriod(positions: PositionWithDates[]) {
   }
 
   return `${startedAt.toFormat(DATE_FORMAT)} ~ ${endedAt.toFormat(DATE_FORMAT)}`;
-}
-
-function createSkillKeywords(skillKeywords?: string[]) {
-  if (!skillKeywords) {
-    return null;
-  }
-  return (
-    <li>
-      <strong>Skill Keywords</strong>
-      <div>
-        {skillKeywords.map((keyword, index) => (
-          <Badge
-            style={Style.skillKeywordBadge}
-            key={index.toString()}
-            color="secondary"
-            className="mr-1"
-          >
-            {keyword}
-          </Badge>
-        ))}
-      </div>
-    </li>
-  );
 }
 
 function createWorkingPeriod(startedAt: DateTime, endedAt?: DateTime | null) {

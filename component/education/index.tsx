@@ -7,6 +7,7 @@ import { IEducation } from './IEducation';
 import { IRow } from '../common/IRow';
 import Util from '../common/Util';
 import { PreProcessingComponent } from '../common/PreProcessingComponent';
+import { useI18n } from '../../i18n/I18nProvider';
 
 type Payload = IEducation.Payload;
 type Item = IEducation.Item;
@@ -21,8 +22,9 @@ export const Education = {
 };
 
 function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
+  const { t } = useI18n();
   return (
-    <CommonSection title="EDUCATION">
+    <CommonSection title={t('section.education')}>
       <EducationRow payload={payload} />
     </CommonSection>
   );

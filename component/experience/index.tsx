@@ -8,6 +8,7 @@ import { IExperience } from './IExperience';
 import { PreProcessingComponent } from '../common/PreProcessingComponent';
 import { Style } from '../common/Style';
 import Util from '../common/Util';
+import { useI18n } from '../../i18n/I18nProvider';
 
 type Payload = IExperience.Payload;
 
@@ -21,13 +22,16 @@ export const Experience = {
 };
 
 function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
+  const { locale, t } = useI18n();
   const totalPeriod = () => {
     if (payload.disableTotalPeriod) {
       return '';
     }
     return (
       <span style={{ fontSize: '50%' }}>
-        <Badge>{getFormattingExperienceTotalDuration(payload)}</Badge>
+        <Badge>
+          {t('experience.totalPrefix')} {getFormattingExperienceTotalDuration(payload, locale)}
+        </Badge>
       </span>
     );
   };
@@ -37,7 +41,9 @@ function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
       <EmptyRowCol>
         <Row className="pb-3">
           <Col>
-            <h2 style={Style.blue}>EXPERIENCE {totalPeriod()}</h2>
+            <h2 style={Style.blue}>
+              {t('section.experience')} {totalPeriod()}
+            </h2>
           </Col>
         </Row>
         {payload.list.map((item, index) => (
@@ -48,7 +54,7 @@ function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
   );
 }
 
-function getFormattingExperienceTotalDuration(payload: IExperience.Payload) {
+function getFormattingExperienceTotalDuration(payload: IExperience.Payload, locale: 'ko' | 'en') {
   const durations = payload.list.reduce((acc: Duration[], item: IExperience.Item) => {
     const itemDurations = item.positions.map((position: IExperience.Position) => {
       const endedAt = position.endedAt
@@ -65,5 +71,5 @@ function getFormattingExperienceTotalDuration(payload: IExperience.Payload) {
     Duration.fromMillis(0),
   );
 
-  return totalExperience.toFormat(`총 ${Util.LUXON_DATE_FORMAT.DURATION_KINDNESS}`);
+  return Util.formatTotalDuration(totalExperience, locale);
 }

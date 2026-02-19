@@ -7,6 +7,7 @@ import { ISkill } from './ISkill';
 import SkillRow from './row';
 import { EmptyRowCol } from '../common';
 import { PreProcessingComponent } from '../common/PreProcessingComponent';
+import { useI18n } from '../../i18n/I18nProvider';
 
 type Payload = ISkill.Payload;
 
@@ -20,13 +21,14 @@ export const Skill = {
 };
 
 function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
+  const { t } = useI18n();
   return (
     <div className="mt-5">
       <EmptyRowCol>
         <Row className="pb-3">
           <Col>
             <h2>
-              <span style={Style.blue}>SKILL</span>
+              <span style={Style.blue}>{t('section.skill')}</span>
               {createTooltip(payload.tooltip)}
             </h2>
           </Col>

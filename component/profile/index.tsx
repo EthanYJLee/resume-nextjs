@@ -7,6 +7,7 @@ import { EmptyRowCol } from '../common';
 import { IProfile } from './IProfile';
 import { Style } from '../common/Style';
 import { PreProcessingComponent } from '../common/PreProcessingComponent';
+import { LocaleToggle } from '../common/LocaleToggle';
 
 type Payload = IProfile.Payload;
 
@@ -28,6 +29,9 @@ function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
           <ProfileImage src={image} />
         </Col>
         <Col md={9} sm={12}>
+          <div className="text-right">
+            <LocaleToggle />
+          </div>
           {createNameArea(name)}
           {createProfileContactMap(contact)}
           {/* {createNoticeArea(notice)} */}

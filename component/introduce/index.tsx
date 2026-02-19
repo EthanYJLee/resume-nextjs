@@ -5,6 +5,7 @@ import { Style } from '../common/Style';
 import Util from '../common/Util';
 import { IIntroduce } from './IIntroduce';
 import { PreProcessingComponent } from '../common/PreProcessingComponent';
+import { useI18n } from '../../i18n/I18nProvider';
 
 type Payload = IIntroduce.Payload;
 
@@ -18,6 +19,7 @@ export const Introduce = {
 };
 
 function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
+  const { t } = useI18n();
   const latestUpdated = DateTime.fromFormat(
     payload.latestUpdated,
     Util.LUXON_DATE_FORMAT.YYYY_LL_DD,
@@ -30,14 +32,14 @@ function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
     <div className="mt-5">
       <Row>
         <Col sm={12} md={3}>
-          <h2 style={Style.blue}>INTRODUCE</h2>
+          <h2 style={Style.blue}>{t('section.introduce')}</h2>
         </Col>
         <Col sm={12} md={9}>
           {payload.contents.map((content, index) => (
             <p key={index.toString()}>{content}</p>
           ))}
           <p className="text-right">
-            <small>Latest Updated</small>{' '}
+            <small>{t('introduce.latestUpdated')}</small>{' '}
             <Badge color="secondary">
               {`${latestUpdated.toFormat(
                 Util.LUXON_DATE_FORMAT.YYYY_DOT_LL_DOT_DD,

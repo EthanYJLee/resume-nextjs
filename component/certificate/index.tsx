@@ -7,6 +7,7 @@ import { ICertificate } from './ICertificate';
 import { IRow } from '../common/IRow';
 import Util from '../common/Util';
 import { PreProcessingComponent } from '../common/PreProcessingComponent';
+import { useI18n } from '../../i18n/I18nProvider';
 
 type Payload = ICertificate.Payload;
 type Item = ICertificate.Item;
@@ -21,24 +22,28 @@ export const Certificate = {
 };
 
 function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
+  const { t } = useI18n();
   return (
-    <CommonSection title="CERTIFICATE">
-      <CertificateRow payload={payload} />
+    <CommonSection title={t('section.certificate')}>
+      <CertificateRow payload={payload} t={t} />
     </CommonSection>
   );
 }
 
-function CertificateRow({ payload }: PropsWithChildren<{ payload: Payload }>) {
+function CertificateRow({
+  payload,
+  t,
+}: PropsWithChildren<{ payload: Payload; t: (key: string) => string }>) {
   return (
     <EmptyRowCol>
       {payload.list.map((item, index) => {
-        return <CommonRows key={index.toString()} payload={serialize(item)} index={index} />;
+        return <CommonRows key={index.toString()} payload={serialize(item, t)} index={index} />;
       })}
     </EmptyRowCol>
   );
 }
 
-function serialize(item: Item): IRow.Payload {
+function serialize(item: Item, t: (key: string) => string): IRow.Payload {
   const DATE_FORMAT = Util.LUXON_DATE_FORMAT;
 
   const acquiredAt = DateTime.fromFormat(item.acquiredAt, DATE_FORMAT.YYYY_LL).toFormat(
@@ -52,10 +57,12 @@ function serialize(item: Item): IRow.Payload {
 
   const extraDescriptions: IRow.Description[] = [];
   if (item.credentialId) {
-    extraDescriptions.push({ content: `Credential ID: ${item.credentialId}` });
+    extraDescriptions.push({
+      content: `${t('certificate.credentialId')}: ${item.credentialId}`,
+    });
   }
   if (item.credentialUrl) {
-    extraDescriptions.push({ content: 'Verification', href: item.credentialUrl });
+    extraDescriptions.push({ content: t('certificate.verification'), href: item.credentialUrl });
   }
 
   const descriptions =
