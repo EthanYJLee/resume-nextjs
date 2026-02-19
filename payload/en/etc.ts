@@ -26,7 +26,7 @@ const etc: IEtc.Payload = {
     },
     {
       title: 'Republic of Korea Marine Corps',
-      subTitle: 'Honorably discharged (Sergeant)',
+      subTitle: 'Honorably discharged (Corporal)',
       startedAt: '2015-11',
       endedAt: '2017-08',
     },
