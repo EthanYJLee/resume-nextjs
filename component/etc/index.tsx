@@ -42,14 +42,21 @@ function EducationRow({ payload }: PropsWithChildren<{ payload: Payload }>) {
 
 function serialize(item: Item): IRow.Payload {
   const DATE_FORMAT = Util.LUXON_DATE_FORMAT;
-  const startedAt = DateTime.fromFormat(item.startedAt, DATE_FORMAT.YYYY_LL).toFormat(
-    DATE_FORMAT.YYYY_DOT_LL,
-  );
+  const startedAt =
+    item.startedAt.length === 7
+      ? DateTime.fromFormat(item.startedAt, DATE_FORMAT.YYYY_LL).toFormat(DATE_FORMAT.YYYY_DOT_LL)
+      : DateTime.fromFormat(item.startedAt, DATE_FORMAT.YYYY_LL_DD).toFormat(
+          DATE_FORMAT.YYYY_DOT_LL_DOT_DD,
+        );
+
   const title = (() => {
     if (item.endedAt) {
-      const endedAt = DateTime.fromFormat(item.endedAt, DATE_FORMAT.YYYY_LL).toFormat(
-        DATE_FORMAT.YYYY_DOT_LL,
-      );
+      const endedAt =
+        item.endedAt.length === 7
+          ? DateTime.fromFormat(item.endedAt, DATE_FORMAT.YYYY_LL).toFormat(DATE_FORMAT.YYYY_DOT_LL)
+          : DateTime.fromFormat(item.endedAt, DATE_FORMAT.YYYY_LL_DD).toFormat(
+              DATE_FORMAT.YYYY_DOT_LL_DOT_DD,
+            );
       return `${startedAt} ~ ${endedAt}`;
     }
     return startedAt;

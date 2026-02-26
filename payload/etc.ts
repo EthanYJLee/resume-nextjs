@@ -7,12 +7,12 @@ const etc: IEtc.Payload = {
     {
       title: '고려대학교 지능정보 SW 아카데미 구현대회',
       subTitle: '최우수상(고려대학교 지능정보 SW 아카데미 학장상) 수상',
-      startedAt: '2025-12',
+      startedAt: '2025-12-12',
     },
     {
       title: '한국경제신문 지능정보 SW 아이디어 경진대회',
       subTitle: '장려상(한국경제신문 사장상) 수상',
-      startedAt: '2025-10',
+      startedAt: '2025-10-24',
     },
     {
       title: '싱가포르 PSB Academy',
@@ -23,7 +23,7 @@ const etc: IEtc.Payload = {
     {
       title: '세종대학교 호텔관광대학 교내학술제(In & Out 학술공모전)',
       subTitle: '최우수상 수상',
-      startedAt: '2018-11',
+      startedAt: '2018-11-14',
     },
     {
       title: '대한민국 해병대',

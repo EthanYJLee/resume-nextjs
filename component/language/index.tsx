@@ -42,9 +42,12 @@ function LanguageRow({ payload }: PropsWithChildren<{ payload: Payload }>) {
 
 function serialize(item: Item): IRow.Payload {
   const DATE_FORMAT = Util.LUXON_DATE_FORMAT;
-  const date = DateTime.fromFormat(item.date, DATE_FORMAT.YYYY_LL).toFormat(
-    DATE_FORMAT.YYYY_DOT_LL,
-  );
+  const date =
+    item.date.length === 7
+      ? DateTime.fromFormat(item.date, DATE_FORMAT.YYYY_LL).toFormat(DATE_FORMAT.YYYY_DOT_LL)
+      : DateTime.fromFormat(item.date, DATE_FORMAT.YYYY_LL_DD).toFormat(
+          DATE_FORMAT.YYYY_DOT_LL_DOT_DD,
+        );
 
   const rightSubTitle = (() => {
     if (!item.certificate && !item.score) return undefined;

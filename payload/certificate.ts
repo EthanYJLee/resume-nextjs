@@ -14,27 +14,27 @@ const certificate: ICertificate.Payload = {
     {
       title: 'AICE - ASSOCIATE',
       issuer: 'KT & 한국경제신문(A251121010000084607)',
-      acquiredAt: '2025-11',
+      acquiredAt: '2025-11-21',
     },
     {
       title: '정보처리기사',
       issuer: '한국산업인력공단(25201011036G)',
-      acquiredAt: '2025-06',
+      acquiredAt: '2025-06-13',
     },
     {
       title: 'SQL 개발자',
       issuer: '한국데이터산업진흥원(SQLD-056003108)',
-      acquiredAt: '2025-04',
+      acquiredAt: '2025-04-04',
     },
     {
       title: '데이터 분석 준전문가',
       issuer: '한국데이터산업진흥원(ADsP-036000940)',
-      acquiredAt: '2023-03',
+      acquiredAt: '2023-03-24',
     },
     {
       title: '프로그래밍기능사',
       issuer: '한국산업인력공단(16652501789N)',
-      acquiredAt: '2016-12',
+      acquiredAt: '2016-12-05',
     },
   ],
 };

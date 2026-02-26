@@ -46,12 +46,21 @@ function CertificateRow({
 function serialize(item: Item, t: (key: string) => string): IRow.Payload {
   const DATE_FORMAT = Util.LUXON_DATE_FORMAT;
 
-  const acquiredAt = DateTime.fromFormat(item.acquiredAt, DATE_FORMAT.YYYY_LL).toFormat(
-    DATE_FORMAT.YYYY_DOT_LL,
-  );
-  const expiresAt = item.expiresAt
-    ? DateTime.fromFormat(item.expiresAt, DATE_FORMAT.YYYY_LL).toFormat(DATE_FORMAT.YYYY_DOT_LL)
-    : undefined;
+  const acquiredAt =
+    item.acquiredAt.length === 7
+      ? DateTime.fromFormat(item.acquiredAt, DATE_FORMAT.YYYY_LL).toFormat(DATE_FORMAT.YYYY_DOT_LL)
+      : DateTime.fromFormat(item.acquiredAt, DATE_FORMAT.YYYY_LL_DD).toFormat(
+          DATE_FORMAT.YYYY_DOT_LL_DOT_DD,
+        );
+  const expiresAt =
+    // eslint-disable-next-line no-nested-ternary
+    item.expiresAt?.length === 7
+      ? DateTime.fromFormat(item.expiresAt, DATE_FORMAT.YYYY_LL).toFormat(DATE_FORMAT.YYYY_DOT_LL)
+      : item.expiresAt?.length === 10
+      ? DateTime.fromFormat(item.expiresAt, DATE_FORMAT.YYYY_LL_DD).toFormat(
+          DATE_FORMAT.YYYY_DOT_LL_DOT_DD,
+        )
+      : undefined;
 
   const leftTitle = expiresAt ? `${acquiredAt} ~ ${expiresAt}` : acquiredAt;
 

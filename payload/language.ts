@@ -18,13 +18,13 @@ const language: ILanguage.Payload = {
     // },
     {
       title: '영어',
-      date: '2025-08',
+      date: '2025-08-10',
       certificate: 'TOEIC',
       score: '890(150724)',
     },
     {
       title: '일본어',
-      date: '2025-08',
+      date: '2025-08-12',
       certificate: 'JLPT',
       score: 'N3(N3A514230A)',
     },
