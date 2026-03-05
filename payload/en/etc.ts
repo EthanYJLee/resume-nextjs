@@ -4,13 +4,21 @@ const etc: IEtc.Payload = {
   disable: false,
   list: [
     {
+      title:
+        'Publication in a KCI-indexed journal - Stable Diffusion-Based 2D Indoor Relighting System with Color-Control MLP Adaptors',
+      href:
+        'https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003309336',
+      subTitle: '3rd author',
+      startedAt: '2026-03',
+    },
+    {
       title: 'Korea University INISW Academy Implementation Contest',
-      subTitle: 'Grand Prize (Dean’s Award)',
+      subTitle: 'Grand Prize (KU INISW Dean’s Award)',
       startedAt: '2025-12',
     },
     {
       title: 'The Korea Economic Daily – Intelligent SW Idea Contest',
-      subTitle: 'Encouragement Prize (CEO Award)',
+      subTitle: 'Honarable Mention (The Korea Economic Daily CEO Award)',
       startedAt: '2025-10',
     },
     {

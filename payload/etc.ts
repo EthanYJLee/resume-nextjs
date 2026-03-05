@@ -5,6 +5,14 @@ const etc: IEtc.Payload = {
 
   list: [
     {
+      title:
+        'KCI 등재 논문 게재 - 색상 제어 MLP 어댑터를 적용한 Stable Diffusion 기반 2D 실내 리라이팅 시스템',
+      href:
+        'https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003309336',
+      subTitle: '3저자',
+      startedAt: '2026-03',
+    },
+    {
       title: '고려대학교 지능정보 SW 아카데미 구현대회',
       subTitle: '최우수상(고려대학교 지능정보 SW 아카데미 학장상) 수상',
       startedAt: '2025-12-12',

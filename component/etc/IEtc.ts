@@ -17,6 +17,9 @@ export declare namespace IEtc {
     /** ### 기타 항목 제목 */
     title: string;
 
+    /** ### 기타 항목 제목 하이퍼링크 */
+    href?: string;
+
     /** ### 기타 항목 서브 타이틀 */
     subTitle: string;
 

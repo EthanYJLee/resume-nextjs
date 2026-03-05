@@ -62,12 +62,21 @@ function serialize(item: Item): IRow.Payload {
     return startedAt;
   })();
 
+  const rightTitle = item.href ? (
+    <a href={item.href} target="_blank" rel="noreferrer">
+      {item.title}
+    </a>
+  ) : (
+    item.title
+  );
+
   return {
     left: {
       title,
     },
     right: {
-      ...item,
+      title: rightTitle,
+      subTitle: item.subTitle,
     },
   };
 }
