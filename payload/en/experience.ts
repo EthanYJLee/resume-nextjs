@@ -5,7 +5,25 @@ const experience: IExperience.Payload = {
   disableTotalPeriod: false,
   list: [
     {
-      title: 'Medi-IoT Co., Ltd. (Medi-IoT)',
+      title: 'Datanium Co., Ltd.',
+      positions: [
+        {
+          title: 'SI Division, Assistant Manager',
+          startedAt: '2026-03',
+          descriptions: [{ content: 'Built Showbox CMS (Content Business Management System)' }],
+          skillKeywords: [
+            'Java',
+            'Spring Boot',
+            'Oracle DB',
+            'Html/Css/Javascript',
+            'IntelliJ',
+            'Linux',
+          ],
+        },
+      ],
+    },
+    {
+      title: 'MEDI-IoT Co., Ltd.',
       positions: [
         {
           title: 'Corporate R&D Center, Research Engineer',

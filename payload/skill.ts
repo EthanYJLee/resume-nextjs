@@ -56,6 +56,10 @@ const infrastructureAndDatabases: ISkill.Skill = {
       level: 3,
     },
     {
+      title: 'Oracle DB',
+      level: 2,
+    },
+    {
       title: 'Docker',
       level: 2,
     },

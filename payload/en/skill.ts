@@ -28,6 +28,7 @@ const infrastructureAndDatabases: ISkill.Skill = {
   items: [
     { title: 'MySQL/MariaDB', level: 3 },
     { title: 'MongoDB', level: 3 },
+    { title: 'Oracle DB', level: 2 },
     { title: 'Docker', level: 2 },
     { title: 'Linux', level: 2 },
     { title: 'nginx/Apache', level: 2 },

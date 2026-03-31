@@ -6,14 +6,14 @@ const education: IEducation.Payload = {
     {
       title: 'Korea University',
       subTitle: 'Completed INISW Academy (Intelligent Information SW Academy)',
-      startedAt: '2025-08',
-      endedAt: '2025-12',
+      startedAt: '2025-08-25',
+      endedAt: '2025-12-12',
     },
     {
       title: 'K-Digital Training',
       subTitle: 'Completed Big Data Analysis & Recommendation Systems program',
-      startedAt: '2022-09',
-      endedAt: '2023-03',
+      startedAt: '2022-09-07',
+      endedAt: '2023-03-29',
     },
     {
       title: 'Sejong University',
