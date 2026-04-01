@@ -5,15 +5,19 @@ const education: IEducation.Payload = {
   list: [
     {
       title: 'Korea University',
-      subTitle: 'Completed INISW Academy (Intelligent Information SW Academy)',
-      startedAt: '2025-08-25',
-      endedAt: '2025-12-12',
+      subTitle: 'Certificate in INISW Academy (Intelligent Information SW Academy) (640 hrs)',
+      // startedAt: '2025-08-25',
+      // endedAt: '2025-12-12',
+      startedAt: '2025-08',
+      endedAt: '2025-12',
     },
     {
       title: 'K-Digital Training',
-      subTitle: 'Completed Big Data Analysis & Recommendation Systems program',
-      startedAt: '2022-09-07',
-      endedAt: '2023-03-29',
+      subTitle: 'Certificate in Big Data Analysis & Recommendation Systems program (1,080 hrs)',
+      // startedAt: '2022-09-07',
+      // endedAt: '2023-03-29',
+      startedAt: '2022-09',
+      endedAt: '2023-03',
     },
     {
       title: 'Sejong University',
@@ -29,7 +33,7 @@ const education: IEducation.Payload = {
     },
     {
       title: 'The British School of Beijing',
-      subTitle: 'Lived in China',
+      subTitle: 'Studied abroad in Beijing, China',
       startedAt: '2010-12',
       endedAt: '2012-12',
     },
