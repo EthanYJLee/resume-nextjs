@@ -10,7 +10,7 @@ const introduce: IIntroduce.Payload = {
     'Veteran Status: N/A',
   ],
   sign: 'Youngjin',
-  latestUpdated: '2026-02-19',
+  latestUpdated: '2026-04-01',
 };
 
 export default introduce;

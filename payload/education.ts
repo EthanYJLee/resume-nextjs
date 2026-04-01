@@ -6,13 +6,13 @@ const education: IEducation.Payload = {
   list: [
     {
       title: '고려대학교',
-      subTitle: '지능정보 SW 아카데미 수료',
+      subTitle: '지능정보 SW 아카데미 수료(640시간)',
       startedAt: '2025-08',
       endedAt: '2025-12',
     },
     {
       title: 'K-Digital Training',
-      subTitle: '빅데이터 분석 & 추천시스템 개발자 양성과정 수료',
+      subTitle: '빅데이터 분석 & 추천시스템 개발자 양성과정 수료(1,080시간)',
       startedAt: '2022-09',
       endedAt: '2023-03',
     },

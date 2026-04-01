@@ -30,11 +30,13 @@ const experience: IExperience.Payload = {
           startedAt: '2023-08',
           endedAt: '2024-12',
           descriptions: [
-            { content: '자체 서비스(AgingLOC, MEDI-EYE) 개발, 운영, 유지보수' },
-            { content: 'Linux 운영 서버 자동화 및 개발 서버 구축' },
+            {
+              content: '헬스케어(AgingLOC), 의료기기연동(MEDI-EYE) 서비스 개발, 운영, 유지보수',
+            },
+            { content: '우분투 기반 운영 서버 자동화 및 개발 서버 구축' },
             { content: '레거시 시스템 리팩토링 및 소스코드 정리' },
             { content: '기업 홈페이지 개발', href: 'https://mediiot.co.kr/' },
-            { content: '각종 과제 및 SI 프로젝트 관리' },
+            { content: '각종 과제 및 프로젝트 관리' },
           ],
           skillKeywords: [
             'Java',
