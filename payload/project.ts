@@ -4,6 +4,22 @@ const project: IProject.Payload = {
   disable: false,
   list: [
     {
+      title: 'SHOWBOX CMS - 콘텐츠사업관리시스템 구축',
+      startedAt: '2026-03',
+      // endedAt: '2026-05',
+      where: '주식회사 데이타늄',
+      descriptions: [
+        { content: 'SHOWBOX CMS (Content Management System) 구축' },
+        {
+          content: '영화, 방송, 전사 시스템 통합 및 커스터마이징을 통한 쇼박스 단일 시스템 구축',
+        },
+        {
+          content: '설계서 검증, 단위/통합테스트, 추가 기능 개발, 안정화 작업',
+        },
+        { content: 'ERP, 그룹웨어 연동 인터페이스 개발' },
+      ],
+    },
+    {
       title: 'Lumiply – 실내 공간 조명 색상 리라이팅(Relighting) 서비스 PoC 개발',
       startedAt: '2025-10',
       endedAt: '2025-12',
@@ -47,7 +63,7 @@ const project: IProject.Payload = {
       title: 'AgingLOC 운동 처방 관리자 페이지 개발',
       startedAt: '2024-10',
       endedAt: '2024-12',
-      where: '(주)메디아이오티(Medi-IoT)',
+      where: '주식회사 메디아이오티',
       descriptions: [
         {
           content:
@@ -70,7 +86,7 @@ const project: IProject.Payload = {
       title: 'MEDI-EYE 서버 이전/배포 체계 구축 및 운영 안정화',
       startedAt: '2024-07',
       endedAt: '2024-12',
-      where: '(주)메디아이오티(Medi-IoT)',
+      where: '주식회사 메디아이오티',
       descriptions: [
         {
           content:
@@ -106,7 +122,7 @@ const project: IProject.Payload = {
       title: '도로 균열(싱크홀) 실시간 모니터링 시스템 개발',
       startedAt: '2024-04',
       endedAt: '2024-06',
-      where: '(주)메디아이오티(Medi-IoT)',
+      where: '주식회사 메디아이오티',
       descriptions: [
         {
           content:
@@ -133,7 +149,7 @@ const project: IProject.Payload = {
       title: 'AgingLOC 커뮤니티 기능 개발',
       startedAt: '2024-01',
       endedAt: '2024-03',
-      where: '(주)메디아이오티(Medi-IoT)',
+      where: '주식회사 메디아이오티',
       descriptions: [
         {
           content: '커뮤니티 기능을 운영 가능한 형태로 개발하여 사용자 참여 기능을 확보',
@@ -153,7 +169,7 @@ const project: IProject.Payload = {
       title: 'AgingLOC 서비스 인수/출시 및 운영 안정화',
       startedAt: '2023-08',
       endedAt: '2023-12',
-      where: '(주)메디아이오티(Medi-IoT)',
+      where: '주식회사 메디아이오티',
       descriptions: [
         {
           content:

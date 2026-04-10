@@ -4,6 +4,23 @@ const project: IProject.Payload = {
   disable: false,
   list: [
     {
+      title: 'SHOWBOX CMS - Content Business Management System',
+      startedAt: '2026-03',
+      // endedAt: '2026-05',
+      where: 'Datanium Co., Ltd.',
+      descriptions: [
+        {
+          content:
+            'Built a unified SHOWBOX system by integrating and customizing film, broadcast, and enterprise-wide systems',
+        },
+        {
+          content:
+            'Verified design documents; unit/integration testing, feature development, and stabilization',
+        },
+        { content: 'Developed ERP and groupware integration interfaces' },
+      ],
+    },
+    {
       title: 'Lumiply – Indoor lighting relighting service PoC',
       startedAt: '2025-10',
       endedAt: '2025-12',
@@ -43,7 +60,7 @@ const project: IProject.Payload = {
       title: 'AgingLOC – Admin dashboard for exercise prescriptions',
       startedAt: '2024-10',
       endedAt: '2024-12',
-      where: 'Medi-IoT Co., Ltd. (Medi-IoT)',
+      where: 'Medi-IoT Co., Ltd.',
       descriptions: [
         {
           content:
@@ -63,7 +80,7 @@ const project: IProject.Payload = {
       title: 'MEDI-EYE – Server migration and deployment system stabilization',
       startedAt: '2024-07',
       endedAt: '2024-12',
-      where: 'Medi-IoT Co., Ltd. (Medi-IoT)',
+      where: 'Medi-IoT Co., Ltd.',
       descriptions: [
         {
           content:
@@ -90,7 +107,7 @@ const project: IProject.Payload = {
       title: 'Road crack (sinkhole) real-time monitoring system',
       startedAt: '2024-04',
       endedAt: '2024-06',
-      where: 'Medi-IoT Co., Ltd. (Medi-IoT)',
+      where: 'Medi-IoT Co., Ltd.',
       descriptions: [
         {
           content:
@@ -118,7 +135,7 @@ const project: IProject.Payload = {
       title: 'AgingLOC – Community features',
       startedAt: '2024-01',
       endedAt: '2024-03',
-      where: 'Medi-IoT Co., Ltd. (Medi-IoT)',
+      where: 'Medi-IoT Co., Ltd.',
       descriptions: [
         {
           content: 'Delivered operable community features to enable user participation',
@@ -137,7 +154,7 @@ const project: IProject.Payload = {
       title: 'AgingLOC – Service takeover, launch, and operations stabilization',
       startedAt: '2023-08',
       endedAt: '2023-12',
-      where: 'Medi-IoT Co., Ltd. (Medi-IoT)',
+      where: 'Medi-IoT Co., Ltd.',
       descriptions: [
         {
           content:

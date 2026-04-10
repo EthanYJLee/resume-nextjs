@@ -10,7 +10,7 @@ const experience: IExperience.Payload = {
         {
           title: 'SI Division, Assistant Manager',
           startedAt: '2026-03',
-          descriptions: [{ content: 'Built Showbox CMS (Content Business Management System)' }],
+          descriptions: [{ content: 'Built SHOWBOX CMS (Content Business Management System)' }],
           skillKeywords: [
             'Java',
             'Spring Boot',
@@ -37,7 +37,6 @@ const experience: IExperience.Payload = {
             { content: 'Refactored legacy systems and organized codebases for maintainability' },
             { content: 'Built the company website', href: 'https://mediiot.co.kr/' },
             { content: 'Managed government-funded tasks and SI projects end-to-end' },
-            { content: 'Current Salary: KRW 30,000,000; Expected Salary: Negotiable' },
           ],
           skillKeywords: [
             'Java',

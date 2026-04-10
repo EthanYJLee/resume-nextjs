@@ -10,7 +10,7 @@ const experience: IExperience.Payload = {
         {
           title: 'SI사업부, 주임',
           startedAt: '2026-03',
-          descriptions: [{ content: '쇼박스 CMS(콘텐츠사업관리시스템) 구축' }],
+          descriptions: [{ content: 'SHOWBOX CMS(콘텐츠사업관리시스템) 구축' }],
           skillKeywords: [
             'Java',
             'Spring Boot',
@@ -23,7 +23,7 @@ const experience: IExperience.Payload = {
       ],
     },
     {
-      title: '주식회사 메디아이오티(MEDI-IoT)',
+      title: '주식회사 메디아이오티',
       positions: [
         {
           title: '기업부설연구소, 연구원',
