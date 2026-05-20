@@ -15,6 +15,10 @@ const project: IProject.Payload = {
         },
         {
           content:
+            'Ensured data integrity and consistency across complex scenarios spanning projects, contracts, costs, revenue, and settlements',
+        },
+        {
+          content:
             'Verified design documents; unit/integration testing, feature development, and stabilization',
         },
         { content: 'Developed ERP and groupware integration interfaces' },
