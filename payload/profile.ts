@@ -5,7 +5,8 @@ import { faBell } from '@fortawesome/free-regular-svg-icons';
 import { IProfile } from '../component/profile/IProfile';
 // import image from '../asset/sample_tux.png';
 // import image from '../asset/youngjinlee.jpg';
-import image from '../asset/profile_image.jpg';
+// import image from '../asset/profile_image.jpg';
+import image from '../asset/260803_profile.jpeg';
 
 const profile: IProfile.Payload = {
   disable: false,
