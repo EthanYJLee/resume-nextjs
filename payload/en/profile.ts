@@ -3,7 +3,7 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faBell } from '@fortawesome/free-regular-svg-icons';
 import { IProfile } from '../../component/profile/IProfile';
 // import image from '../../asset/profile_image.jpg';
-import image from '../asset/260803_profile.jpeg';
+import image from '../../asset/260803_profile.jpeg';
 
 const profile: IProfile.Payload = {
   disable: false,
