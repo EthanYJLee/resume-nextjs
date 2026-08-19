@@ -6,7 +6,7 @@ const project: IProject.Payload = {
     {
       title: 'SHOWBOX CMS - Content Business Management System',
       startedAt: '2026-03',
-      // endedAt: '2026-05',
+      endedAt: '2026-07',
       where: 'Datanium Co., Ltd.',
       descriptions: [
         {
@@ -25,7 +25,7 @@ const project: IProject.Payload = {
       ],
     },
     {
-      title: 'Lumiply – Indoor lighting relighting service PoC',
+      title: 'Lumiply - Indoor lighting relighting service PoC',
       startedAt: '2025-10',
       endedAt: '2025-12',
       where: 'Korea University INISW (Architecture Lead & AI Engineer)',
@@ -40,7 +40,7 @@ const project: IProject.Payload = {
         },
         {
           content:
-            'Collected data via indoor image crawling and established a collect–experiment–feedback loop using augmentation and metrics such as SSIM/LPIPS',
+            'Collected data via indoor image crawling and established a collect-experiment-feedback loop using augmentation and metrics such as SSIM/LPIPS',
         },
         {
           content:
@@ -61,7 +61,7 @@ const project: IProject.Payload = {
       ],
     },
     {
-      title: 'AgingLOC – Admin dashboard for exercise prescriptions',
+      title: 'AgingLOC - Admin dashboard for exercise prescriptions',
       startedAt: '2024-10',
       endedAt: '2024-12',
       where: 'Medi-IoT Co., Ltd.',
@@ -81,14 +81,14 @@ const project: IProject.Payload = {
       ],
     },
     {
-      title: 'MEDI-EYE – Server migration and deployment system stabilization',
+      title: 'MEDI-EYE - Server migration and deployment system stabilization',
       startedAt: '2024-07',
       endedAt: '2024-12',
       where: 'Medi-IoT Co., Ltd.',
       descriptions: [
         {
           content:
-            'Established a Ubuntu–Docker–Nginx WAR deployment pipeline to stabilize production environment after server migration',
+            'Established a Ubuntu-Docker-Nginx WAR deployment pipeline to stabilize production environment after server migration',
         },
         {
           content:
@@ -123,7 +123,7 @@ const project: IProject.Payload = {
         },
         {
           content:
-            'Implemented FastAPI–MySQL storage API and built a pipeline to store and post-process result images on the filesystem',
+            'Implemented FastAPI-MySQL storage API and built a pipeline to store and post-process result images on the filesystem',
         },
         {
           content:
@@ -136,7 +136,7 @@ const project: IProject.Payload = {
       ],
     },
     {
-      title: 'AgingLOC – Community features',
+      title: 'AgingLOC - Community features',
       startedAt: '2024-01',
       endedAt: '2024-03',
       where: 'Medi-IoT Co., Ltd.',
@@ -155,7 +155,7 @@ const project: IProject.Payload = {
       ],
     },
     {
-      title: 'AgingLOC – Service takeover, launch, and operations stabilization',
+      title: 'AgingLOC - Service takeover, launch, and operations stabilization',
       startedAt: '2023-08',
       endedAt: '2023-12',
       where: 'Medi-IoT Co., Ltd.',

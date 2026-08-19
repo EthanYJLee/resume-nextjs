@@ -6,7 +6,7 @@ const project: IProject.Payload = {
     {
       title: 'SHOWBOX CMS - 콘텐츠사업관리시스템 구축',
       startedAt: '2026-03',
-      // endedAt: '2026-05',
+      endedAt: '2026-07',
       where: '주식회사 데이타늄',
       descriptions: [
         { content: 'SHOWBOX CMS (Content Management System) 구축' },
@@ -24,7 +24,7 @@ const project: IProject.Payload = {
       ],
     },
     {
-      title: 'Lumiply – 실내 공간 조명 색상 리라이팅(Relighting) 서비스 PoC 개발',
+      title: 'Lumiply - 실내 공간 조명 색상 리라이팅(Relighting) 서비스 PoC 개발',
       startedAt: '2025-10',
       endedAt: '2025-12',
       where: '고려대학교 INISW',
@@ -94,7 +94,7 @@ const project: IProject.Payload = {
       descriptions: [
         {
           content:
-            '운영 서버 이전 과정에서 Ubuntu–Docker–Nginx 기반 war 배포 체계를 구성해 운영 서버 이전 후 서비스 가동 환경을 안정화',
+            '운영 서버 이전 과정에서 Ubuntu-Docker-Nginx 기반 war 배포 체계를 구성해 운영 서버 이전 후 서비스 가동 환경을 안정화',
         },
         {
           content:
@@ -137,7 +137,7 @@ const project: IProject.Payload = {
         },
         {
           content:
-            'FastAPI–MySQL 기반 저장 API를 구현하고, 결과 이미지를 파일 시스템에 저장하고 후처리하는 파이프라인을 구성',
+            'FastAPI-MySQL 기반 저장 API를 구현하고, 결과 이미지를 파일 시스템에 저장하고 후처리하는 파이프라인을 구성',
         },
         {
           content:

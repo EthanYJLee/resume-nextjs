@@ -17,7 +17,7 @@ const etc: IEtc.Payload = {
       startedAt: '2025-12',
     },
     {
-      title: 'The Korea Economic Daily – Intelligent SW Idea Contest',
+      title: 'The Korea Economic Daily - Intelligent SW Idea Contest',
       subTitle: 'Honarable Mention (The Korea Economic Daily CEO Award)',
       startedAt: '2025-10',
     },
